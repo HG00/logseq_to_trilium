@@ -24,20 +24,17 @@ pip install trilium-py mistune
 ```
 ## Usage
 
-1. Get an ETAPI Token
+* Get an ETAPI Token
 In Trilium: Menu then Options then ETAPI then Create new token
-
-1. Set environment
+* Set environment
 ```bash
 export TRILIUM_URL="http://localhost:8080"
 export TRILIUM_TOKEN="your_token_here"
 ```
-
-1. If you're on a new trilium installation, click "go to todays journal" to
+* If you're on a new trilium installation, click "go to todays journal" to
 initialise the calendar/journal - we'll import all journal entries from logseq
 here.
-
-1. Run the import
+* Run the import
 ```bash
 # Dry run
 python logseq_to_trilium.py ~/path/to/logseq/graph --dry-run
